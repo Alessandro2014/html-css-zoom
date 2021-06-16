@@ -9,12 +9,96 @@ body {
     color: white;
 }
 
-header {
-    position: relative;
-}
 
 #top-bar {
-    position: fixed;
     height: 80px;
     width: 100%;
+    background-color: black;
+}
+
+#top-bar > div {
+    line-height: 80px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#top-bar div span {
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #4A4A4A;
+    text-align: right;
+}
+
+/* main */
+
+.container {
+    height: calc(100vh - 180px);
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;  
+    justify-content: center;
+}
+
+main .profile {
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin: 5px;
+
+}
+.profile > span {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    
+}
+
+.profile {
+    background-image: url(https://i.picsum.photos/id/1001/246/146.jpg?hmac=hR2fRb5svGmdnssNs_hZGlZlrbsG0mKeQNQFyV8wShw);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* footer */
+
+#bottom-bar {
+    height: 100px;
+    background-color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom-bar .control-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+}
+
+.control-buttons .single-buttons {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.control-buttons .single-buttons i:nth-child(1) {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.control-buttons .single-buttons .fa-share-square {
+    color: rgb(9, 194, 9);
+}
+
+.end-meeting {
+    color: red;
+    background-color: #4A4A4A;
+    height: 100%;
+    line-height: 100px;
+    padding: 0 20px;
 }
